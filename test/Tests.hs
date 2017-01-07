@@ -15,5 +15,9 @@ abstractMachineSuite =
         [ testCase ("value "++(show exp1)++" -> "++show 4) $
             (value exp1) @?= 4
         ]
+    , testGroup "value'"
+        [ testCase ("value' "++(show exp1)++" -> "++show 4) $
+            (value' exp1) @?= 4
+        ]
     ]
 main = defaultMain abstractMachineSuite
