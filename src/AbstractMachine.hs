@@ -6,4 +6,5 @@ value :: Expr -> Int
 value _ = 4
 
 value' :: Expr -> Int
-value' = undefined
+value' (Val n) = n
+value' (Add x y) = value' x + value' y
