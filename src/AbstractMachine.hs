@@ -5,7 +5,7 @@ type Cont = [Op]
 data Op   = EVAL Expr | ADD Int deriving (Show)
 
 value :: Expr -> Int
-value = undefined
+value e = eval e []
 
 value' :: Expr -> Int
 value' (Val n) = n
