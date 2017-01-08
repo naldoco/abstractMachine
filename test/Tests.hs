@@ -26,6 +26,10 @@ abstractMachineSuite =
     [ testGroup "value"
         [ testCase ("value "++(show exp1)++" -> "++show 4) $
             (value exp1) @?= 4
+        , testCase ("value "++(show exp2)++" -> "++show 9) $
+            (value exp2) @?= 9
+        , testCase ("value "++(show exp3)++" -> "++show 9) $
+            (value exp3) @?= 9
         ]
     , testGroup "value'"
         [ testCase ("value' "++(show exp1)++" -> "++show 4) $
