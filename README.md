@@ -14,7 +14,7 @@ Kata: abstractMachine (TDD Style) - Graham Hutton's "Programming in Haskell 2nd 
     Prelude> :load  test/Tests.hs src/AbstractMachine.hs
     *Main> main
     
-## Run tests with Cabal:
+## Run tests with Cabal
     cabal update
     cabal sandbox init
     cabal install tasty tasty-hunit
